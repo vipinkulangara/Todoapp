@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>My To Do</h1>
+<table>
+
+    <tr>
+        <th>items</th>
+    </tr>
+    {% for task in task %}
+    <tr>
+        <td>{task.title}}</td>
+        <a href="">view</a>
+    </tr>
+    {% empty %}
+    <h3>No items in list</h3>
+    <a href="task_details">Add New Task</a>
+    {% endfor%}
+</table>
+</body>
+</html>
